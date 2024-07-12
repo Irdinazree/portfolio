@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irdina Azree</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#work">My Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#contact" id="highlight">Hire Me!</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="header1">
+        <div class="wrapper1">
+            <div class="article" id="Attendance-Website">
+                <div class="block">
+                    <div class="right-block">
+                        <label>Attendance System Website</label>
+                        <div class="tag-color">
+                            <div class="tag-pink">HTML</div>
+                            <div class="tag-pink">CSS</div>
+                            <div class="tag-blue">PHP</div>
+                            <div class="tag-red">Microsoft SQL</div>
+                        </div>
+                        <div class="exp">
+                            <p>Collaborate with IT department, this website project provides an intuitive and user-friendly interface that simplifies the process of tracking, recording, and analyzing attendance data in company from different branch.</p>
+                            <p>Working with the back-end developer, I design the website interface based on my supervisors and HR staffs requirements.</p>
+                            <p>This website are actively use by HR staffs to manage employee attendance data.</p>
+                        </div>
+                    </div>
+                    <div class="left-block">
+                        <img src="images/Login.png" alt="">
+                        <img src="images/Homepage1.png" alt="">
+                    </div>
+                    <a href="index.html#work" class="btn-2">Back to list</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social">
+        <a href="mailto:irdinazre22@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/nur-irdina-khalidah-azree-500125288/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://github.com/Irdinazree" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+      <p class="copyright">@ 2024 Irdina Azree</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+         var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+            navLinks.style.right= "0";
+         }
+         function hideMenu(){
+            navLinks.style.right= "-200px";
+         }
+         function show(shown, hidden) {
+            document.getElementById(shown).style.display='block';
+            document.getElementById(hidden).style.display='none';
+            return false;
+            }
+    </script>
+
+</body>
+</html>
